@@ -1,0 +1,40 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+
+.left-nav>span {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--purple);
+}
+
+.right-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-item {
+    cursor: pointer;
+    color: var(--grey);
+}
+
+.nav-select {
+    cursor: pointer;
+    padding: 7px 13px;
+    background-color: white;
+    border-color: var(--purple);
+    border-radius: 20px;
+    color: var(--purple);
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.profile-menu-item {
+    color: var(--purple);
+}

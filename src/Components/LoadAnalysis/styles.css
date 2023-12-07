@@ -1,0 +1,30 @@
+.load-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    min-height: 210px;
+
+}
+
+.load-top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    color: var(--light-purple);
+}
+
+.load-top>span {
+    color: black !important;
+    font-size: var(--title-size);
+    font-weight: 600;
+}
+
+.load-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 10px;
+}

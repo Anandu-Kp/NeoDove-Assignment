@@ -1,0 +1,23 @@
+.load-box {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 75px;
+    height: 45px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.load-box>.count {
+    font-size: 16px;
+    font-weight: 500;
+    align-self: flex-start;
+}
+
+.load-title {
+    font-size: 13px;
+    align-self: flex-start;
+}
