@@ -1,0 +1,43 @@
+.Lead-source-container {
+    background-color: white;
+
+    border-radius: 20px;
+    width: 42vw;
+    height: 315px;
+}
+
+.chart {
+
+    height: 250px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.legends {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 16vw;
+}
+
+.legends>div {
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.legends>div>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.legends>div .dot {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}

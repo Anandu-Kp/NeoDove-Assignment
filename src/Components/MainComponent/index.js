@@ -11,6 +11,7 @@ import CallAnalysis from "../CallAnalysis";
 import CallIcon from '@mui/icons-material/Call';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
+import ChartBox from "../ChartBox";
 
 function MainComponent() {
     return (
@@ -42,6 +43,9 @@ function MainComponent() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div className="main-top-right">
+                        <ChartBox />
                     </div>
                 </div>
                 <div className="main-bottom">

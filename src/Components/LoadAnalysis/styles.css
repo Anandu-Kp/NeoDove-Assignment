@@ -3,7 +3,7 @@
     flex-direction: column;
     background-color: white;
     border-radius: 20px;
-    min-height: 210px;
+    height: 190px;
 
 }
 
@@ -26,5 +26,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 10px;
+    padding: 10px;
 }

@@ -3,7 +3,7 @@ import "./styles.css"
 import React from 'react'
 import CloseIcon from '@mui/icons-material/Close';
 
-function CampignItem({ campign, key }) {
+function CampignItem({ campign }) {
 
     return (
         <div className="campign-item">

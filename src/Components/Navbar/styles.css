@@ -1,13 +1,13 @@
 .nav {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 7px;
 }
 
 
 
 .left-nav>span {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--purple);
 }
@@ -26,7 +26,7 @@
 
 .nav-select {
     cursor: pointer;
-    padding: 7px 13px;
+    padding: 3px 13px;
     background-color: white;
     border-color: var(--purple);
     border-radius: 20px;

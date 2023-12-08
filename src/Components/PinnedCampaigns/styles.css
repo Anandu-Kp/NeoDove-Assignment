@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-    padding: 10px 15px;
+    padding: 5px 15px;
 }
 
 .pinned-campaigns>.top>div {
@@ -21,7 +21,7 @@
 }
 
 .pinned-campaigns>.top>div span {
-
+    font-size: 13px;
     font-weight: 500;
 }
 

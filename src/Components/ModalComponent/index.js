@@ -20,6 +20,11 @@ const style = {
 export default function ModalComponent({ handleClose, open, campaigns }) {
 
     const [currentCampaign, setCurrentCampaign] = React.useState("");
+    const [filteredCampaigns, setFilteredCampaigns] = React.useState("");
+
+    React.useEffect(() => {
+        setFilteredCampaigns(campaigns)
+    }, [])
 
 
     const changeCurrentMenu = (e) => {
@@ -40,10 +45,14 @@ export default function ModalComponent({ handleClose, open, campaigns }) {
         handleClose();
     }
 
+    const searchFn = (e) => {
+        setFilteredCampaigns(campaigns.filter((campaign) => campaign.title.toLowerCase().includes(e.target.value.toLowerCase())))
+        // console.log(filteredCampaigns);
+    }
+
 
     return (
         <div>
-
             <Modal
                 open={open}
                 onClose={handleClose}
@@ -55,10 +64,10 @@ export default function ModalComponent({ handleClose, open, campaigns }) {
                         Pin Cambaigns
                     </Typography>
                     <div className='cambign-list'>
-                        <input className='search-campaign' placeholder='Search Campaigns..' type='text'></input>
+                        <input className='search-campaign' placeholder='Search Campaigns..' onChange={searchFn} type='text'></input>
                         <div className='campaign-list-conatiner'>
                             {
-                                campaigns.map((campaign, idx) => !campaign.isPinned && <div onClick={changeCurrentMenu} id={idx} className='campaign-list-item'><span>{campaign.title}</span></div>)
+                                filteredCampaigns && filteredCampaigns.map((campaign, idx) => !campaign.isPinned && <div key={idx} onClick={changeCurrentMenu} id={idx} className='campaign-list-item'><span>{campaign.title}</span></div>)
                             }
                         </div>
                         <div className='campaign-list-bottom'>
